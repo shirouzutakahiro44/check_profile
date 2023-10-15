@@ -13,6 +13,8 @@ class User < ApplicationRecord
   validates :email, presence: true
   validates :first_name, presence: true, length: { maximum: 255 }
   validates :last_name, presence: true, length: { maximum: 255 }
+  mount_uploader :avatar, ImageUploader
+  
 
   def mine?(object)
     # 呼び出し元のオブジェクトのIDを示す self.id を省略した記法。

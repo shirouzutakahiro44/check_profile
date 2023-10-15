@@ -1,0 +1,62 @@
+ja:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "空になっています。入力してください。"
+            age:
+              blank: "空になっています。入力してください。"
+            email:
+              blank: "can't be blank"
+            first_name:
+              blank: "can't be blank"
+            last_name:
+              blank: "can't be blank"
+
+  defaults: #すべてのコントローラーで使える
+    login: "ログイン"
+    register: "登録"
+    logout: "ログアウト"
+    post: "投稿"
+    message:
+      require_login: "ログインしてください"
+      created: "%{item}を作成しました"
+      not_created: "%{item}を作成できませんでした"
+      edited: "編集しました"
+      not_edited: "%{item}を編集できませんでした"
+    update: "Update User"
+  users:
+    new:
+      title: "ユーザー登録"
+      to_login_page: "ログインページへ"
+    create:
+      success: "ユーザー登録が完了しました"
+      fail: "ユーザー登録に失敗しました"
+  user_sessions:
+    new:
+      title: "ログイン"
+      to_register_page: "登録ページへ"
+      password_forget: "パスワードをお忘れの方はこちら"
+    create:
+      success: "ログインしました"
+      fail: "ログインに失敗しました"
+    destroy:
+      success: "ログアウトしました"
+  boards:
+    index:
+      title: "掲示板一覧"
+      no_result: "掲示板がありません"
+    new:
+      title: "掲示板作成"
+    show:
+      title: "掲示板詳細"
+    bookmarks:
+      title: "ブックマーク一覧"
+  profiles:
+    show:
+      title: "プロフィール"
+    edit:
+      title: "プロフィール編集"
+      update: "編集"

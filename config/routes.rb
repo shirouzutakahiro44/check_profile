@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     get 'likes', on: :collection
     resource :like, only: %i[create destroy]
   end
-  resources :users, only: %i[new create]
+  resources :users, only: %i[new create edit]
+  resource :profile, only: %i[show edit update]
 end
