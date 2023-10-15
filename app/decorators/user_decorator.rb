@@ -1,8 +1,5 @@
 class UserDecorator < Draper::Decorator
   delegate_all
-
-
-
   def full_name
     "#{object.last_name}#{object.first_name}"
   end
@@ -14,5 +11,4 @@ class UserDecorator < Draper::Decorator
   #       object.created_at.strftime("%a %m/%d/%y")
   #     end
   #   end
-
 end
